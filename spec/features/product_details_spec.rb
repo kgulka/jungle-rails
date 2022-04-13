@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "ProductDetails", type: :feature, js: true do
+RSpec.feature "ProductDetails", type: :feature, skip: true, js: true do
     # SETUP
     before :each do
       @category = Category.create! name: 'Apparel'
@@ -19,11 +19,12 @@ RSpec.feature "ProductDetails", type: :feature, js: true do
       # ACT
       visit root_path
 
-      
-       within first('.product') do
+      within first('.product') do
         click_on 'Details'
-       end
-       sleep(2)
+      end
+      #wait for product detail page to get teh right snapshot.
+      sleep(2)
+
       # DEBUG 
       save_screenshot
       
