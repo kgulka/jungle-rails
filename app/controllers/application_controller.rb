@@ -37,5 +37,6 @@ class ApplicationController < ActionController::Base
     }
     cookies[:cart]
   end
+  helper_method :update_cart
 
 end

@@ -1,55 +1,30 @@
-<h1>Signup!</h1>
+<h1>Signup</h1>
 <div class="panel panel-default items">
-  <table class="table table-bordered">
-    <thead>
-      
-      <%= form_for :user, url: '/users' do |f| %>
-      <tr>
-        <th>
-          First Name: 
-        </th>
-        <th>
-          <%= f.text_field :first_name %>
-        </th>
-      </tr>
-      <tr>
-        <th>
-          Last Name: 
-        </th>
-        <th>
-          <%= f.text_field :last_name %>
-        </th>
-      </tr>
-      <tr>
-        <th>  
-          Email: 
-        </th>
-        <th>      
-          <%= f.text_field :email %>
-        </th>
-      </tr>
-      <tr>
-        <th>       
-          Password: 
-        </th>
-        <th>        
-          <%= f.password_field :password %>
-        </th>
-      </tr>
-      <tr>
-        <th>       
-          Password Confirmation: 
-        </th>
-        <th>  
-          <%= f.password_field :password_confirmation %>
-          </th>
-      </tr>
-      <tr>
-        <th colspan='2'>  
-          <%= f.submit "Submit" %>
-        </th>
-      </tr>
-      <% end %>
-    </thead>
-  </table>
+       
+  <%= form_for :user, url: '/users' do |f| %>
+    <p>
+      First Name: 
+      <%= f.text_field :first_name %>
+    </p>
+    <p>
+      Last Name: 
+      <%= f.text_field :last_name %>
+    </p>
+    <p>
+        Email: 
+        <%= f.text_field :email %>
+    </p>
+    <p>
+        Password: 
+        <%= f.password_field :password %>
+    </p>
+    <p>
+        Password Confirmation: 
+        <%= f.password_field :password_confirmation %>
+    </p>
+    <p>
+        <%= f.submit "Submit" %>
+    </p>
+  <% end %>
+
 </div>
