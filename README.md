@@ -11,11 +11,11 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ## Screen Shots
 
-!["Main Page Products"]()
+!["Main Page Products"](https://github.com/kgulka/jungle-rails/blob/master/docs/ScreenShot-MainProducts.png)
 
-!["Shopping Cart"]()
+!["Shopping Cart"](https://github.com/kgulka/jungle-rails/blob/master/docs/ScreenShot-Cart.png)
 
-!["Order Complete"]()
+!["Order Complete"](https://github.com/kgulka/jungle-rails/blob/master/docs/ScreenShot-Order.png)
 
 ## Setup
 
